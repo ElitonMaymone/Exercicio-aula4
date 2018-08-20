@@ -5,14 +5,16 @@ import java.util.List;
 
 public enum EstadosDoBrasil {
 	PR("Paraná"), SC("Santa Catarina"), RS("Rio Grande do Sul"), SP("São Paulo"), AM("Amazonas"), RR("Roraima"),
-	AP("Amapá"), PA("Pará"),	TO,	RO,	AC,	MA, PI,	CE,	RN,	PE,	AL,	BA,	MT,	MS,	GO, RJ, ES, MG, PB, SE;
+	AP("Amapá"), PA("Pará"), TO("Tocantins"), RO("Rondônia"), AC("Acre"), MA("Maranhão"), PI("Piaui"), CE("Ceará"),	RN("Rio Grande do Norte"),
+	PE("Pernambuco"), AL("Alagoas"), BA("Bahia"), MT("Mato Grosso"), MS("Mato Grosso do Sul"), GO("Goias"), RJ("Rio de Janeiro"), ES("Espírito Santo"),
+	MG("Minas Gerais"), PB("Paraíba"), SE("Sergipe");
 	
-	private String nomeDoEstado;
-	public String getNomeDoEstado(){
-		return nomeDoEstado;
+	private String Estado;
+	public String getEstado(){
+		return Estado;
 	}
 	private EstadosDoBrasil (String nome){
-		this.nomeDoEstado = nome;
+		this.Estado = nome;
 	}
 	List<EstadosDoBrasil> estados = new ArrayList<EstadosDoBrasil>();
 	
